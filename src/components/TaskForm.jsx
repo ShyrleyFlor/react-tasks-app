@@ -21,6 +21,7 @@ function TaskForm() {
 
   return (
     <form onSubmit={handleSubmit} className="bg-gray-800 max-w-sm p-10 rounded-md mb-4 text-center">
+      <h1 className="text-xl font-bold capitalize text-white p-5">Crea tu tarea</h1>
       <input
         placeholder="Escribe una nueva tarea"
         onChange={(e) => setTitle(e.target.value)}
