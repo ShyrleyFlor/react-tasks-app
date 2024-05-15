@@ -20,19 +20,21 @@ function TaskForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="bg-gray-800 max-w-sm p-10 rounded-md mb-4 text-center">
       <input
         placeholder="Escribe una nueva tarea"
         onChange={(e) => setTitle(e.target.value)}
         value={title}
         autoFocus
+        className="bg-gray-200 p-2 rounded-md mb-4 w-full"
       />
       <input
         placeholder="Escribe una descripción"
         onChange={(e) => setDescription(e.target.value)}
         value={description}
+        className="bg-gray-200 p-2 rounded-md mb-4 w-full"
       />
-      <button>Añadir</button>
+      <button className="bg-green-500 px-1 py-1 rounded-md mt-4 hover:bg-green-300 text-white">Añadir</button>
     </form>
   );
 }
